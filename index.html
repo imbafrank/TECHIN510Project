@@ -1,0 +1,40 @@
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://unpkg.com/siriwave/dist/siriwave.umd.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+  
+  <script src="igor.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <img src="images/dark.jpg" id="dark-bg" />
+  <img src="images/light.jpg" id="light-bg" />
+  <div class="title"><h1>Smart Web Voice Assistant</h1></div>
+  <div class="vertical-center">
+    <span id='programming-area' contenteditable="true" oninput="userEditedCode()" class="w3-card w3-hover-shadow"></span>
+    <p id='messageLog' class="container-fluid my-well w3-card"></p>
+    <div id="input-display2"></div>
+    <div id="input-display"></div>
+    <!-- <div id="input-prompt"></div> -->
+    <div id="siri-container"></div>
+            <div class="container">
+              <img id="siri_btn" src="images/siribtn2.gif"></img>
+            </div>
+            <audio id="alarm">
+              <source src="alarm.wav" type="audio/mpeg">
+            </audio>
+            
+
+    <!-- <script>
+      var imgElement;
+      window.onload=function(){
+        imgElement = document.getElementById('lbg');
+        imgElement.style.width = document.body.clientWidth + 'px';
+        imgElement.style.height = document.body.clientHeight + 'px';
+
+      }
+    </script>        -->
+</body>
+</html>
